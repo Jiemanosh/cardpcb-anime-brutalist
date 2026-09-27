@@ -1,0 +1,60 @@
+<!--
+  动漫粗野主义艺术卡 · 七层 SVG 模板 (91x60mm)
+  用法: 在对应 <g id="Lx-..."> 里填内容; 渲染前 resvg 须剥离根节点 mm 单位并挂载中文字体。
+  落板映射见 references/design-language.md 与 coordinate-framework.md。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="91mm" height="60mm" viewBox="0 0 91 60">
+  <title>Anime Brutalist Campus Card — 7-layer template</title>
+  <desc>85x54mm + 3mm bleed · 七层分层骨架</desc>
+
+  <!-- L1-bg: 纯色底 -->
+  <g id="L1-bg">
+    <rect x="0" y="0" width="91" height="60" fill="#0B0B0D"/>
+  </g>
+
+  <!-- L2-bg-type: 背景大字 (Impact / Arial Black) -->
+  <g id="L2-bg-type" font-family="Impact, 'Arial Black', sans-serif">
+    <text x="8" y="20" font-size="16" letter-spacing="0.8" fill="#38151A">LOVE SONG</text>
+  </g>
+
+  <!-- L3-geometry: 几何色块/线 -->
+  <g id="L3-geometry">
+    <polygon points="91,0 73,0 91,11" fill="#14204A"/>
+    <rect x="24" y="5" width="73" height="42" fill="none" stroke="#D6336C" stroke-width="1.3"/>
+    <line x1="0" y1="48" x2="91" y2="48" stroke="#F5C518" stroke-width="0.25" opacity="0.8"/>
+  </g>
+
+  <!-- L4-tech-labels: 等宽技术标签 / 歌词 / 客编 (Consolas) -->
+  <g id="L4-tech-labels" font-family="Consolas, 'Courier New', monospace">
+    <text x="8" y="50.5" font-size="1.95" fill="#EDEDE6" letter-spacing="0.05">KHALIL FONG — CAMPUS CARD SERIES</text>
+    <text x="8" y="52.8" font-size="2" fill="#F5C518" letter-spacing="0.1">FIG.02 — HAND &amp; MIC</text>
+    <text x="8" y="55.1" font-size="2" fill="#EDEDE6">MIC — DYNAMIC</text>
+    <text x="86" y="34" font-size="2.8" fill="#EDEDE6" letter-spacing="0.3"
+          text-anchor="end" font-family="LXGW WenKai Medium, LXGW WenKai, KaiTi, sans-serif">你給了我一首</text>
+    <text x="86.5" y="4.5" font-size="2.2" fill="#EDEDE6" text-anchor="end">B-05</text>
+  </g>
+
+  <!-- L5-figure-real: 主体抠图 (base64 image + clipPath) -->
+  <g id="L5-figure-real">
+    <clipPath id="figCrop"><rect x="0" y="0" width="91" height="47"/></clipPath>
+    <!-- <image x="0" y="-4.2" width="93.99" height="51.14" preserveAspectRatio="none"
+             xlink:href="data:image/png;base64,..." clip-path="url(#figCrop)"/> -->
+  </g>
+
+  <!-- L6-fg-type: 前景大字/数字 (沉金候选) -->
+  <g id="L6-fg-type" font-family="Impact, 'Arial Black', sans-serif">
+    <text x="0" y="0" transform="translate(41.5,0) rotate(90)" font-size="9.5"
+          letter-spacing="1" fill="#EDEDE6">SOUL BOY</text>
+    <text x="70.5" y="54" font-size="20" fill="#F5C518">15</text>
+  </g>
+
+  <!-- L7-micro: 刻度带 / 编号 -->
+  <g id="L7-micro" font-family="Consolas, monospace">
+    <text x="3" y="57.4" font-size="1.7" fill="#EDEDE6" opacity="0.75">0</text>
+    <text x="8" y="57.4" font-size="1.7" fill="#EDEDE6" opacity="0.6">PRINTED IN 2026 — SIDE B</text>
+    <text x="44" y="57.4" font-size="1.7" fill="#EDEDE6" opacity="0.75">45</text>
+    <text x="85" y="57.4" font-size="1.7" fill="#EDEDE6" opacity="0.75">85MM</text>
+    <text x="55" y="58.8" font-size="2" fill="#F5C518">CAT.NO 15-2011-KF06</text>
+  </g>
+</svg>

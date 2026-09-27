@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 运行时生成
+*.png
+*.b64
+payload.png
+cu_80.png
+mk_80.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 编辑器
+*.swp
+.idea/
+.vscode/
