@@ -27,13 +27,13 @@
 
 本项目实战卡：`91×60mm` 动漫粗野主义 PCB 艺术卡，A 面取材 Khalil Fong《Timeless 2009》，B 面取材《15 / Soul Boy 2006》美学。
 
-### A 面
-![A 面 - Timeless 2009](assets/examples/example-sidea-preview.png)
+### A 面（设计稿 SVG）
+![A 面 - Timeless 2009](assets/examples/example-sidea.svg)
 
-### B 面（最终渲染）
-![B 面 - 15 Love Song](assets/examples/example-sideb-preview.png)
+### B 面（设计稿 SVG）
+![B 面 - 15 Love Song](assets/examples/example-sideb.svg)
 
-### B 面 + 2mm 圆角板框
+### B 面 + 2mm 圆角板框（EDA 实板渲染）
 ![B 面 + 2mm 圆角板框](assets/examples/example-sideb-rounded.png)
 
 ---
@@ -54,12 +54,11 @@ cardpcb-anime-brutalist/
 │   └── traps.md                    # 20 个坑
 ├── assets/
 │   ├── layer-template.svg          # 七层可编辑 SVG 模板
-│   ├── example-cardpcb-sideb.svg   # B 面实战范例（含主体抠图）
 │   ├── pipeline-example.py         # 通用化落地脚本（丝印/沉金 + 回读校验）
-│   └── examples/                   # 本项目实战卡成品效果图
-│       ├── example-sidea-preview.png   # A 面：Timeless 2009
-│       ├── example-sideb-preview.png   # B 面：15 / Love Song
-│       └── example-sideb-rounded.png   # B 面 + 2mm 圆角板框
+│   └── examples/                   # 本项目实战卡设计稿与成品
+│       ├── example-sidea.svg          # A 面设计稿：Timeless 2009
+│       ├── example-sideb.svg          # B 面设计稿：15 / Soul Boy 2006
+│       └── example-sideb-rounded.png  # B 面 + 2mm 圆角板框（EDA 实板渲染）
 ```
 
 ---
